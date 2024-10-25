@@ -50,7 +50,8 @@ nav a:hover {
 }
 
 .intro {
-    margin-top: 100px; /* Space for fixed nav */
+    margin-top: 100px;
+    /* Space for fixed nav */
 }
 
 h1 {
@@ -126,14 +127,76 @@ h2 {
     transform: scale(1.05);
 }
 
-.contact-list {
-    list-style-type: none;
-    padding: 0;
+/* Contact Section Styles */
+#contact {
+    background: linear-gradient(135deg, #2a5298, #1e3c72);
+    color: #fff;
+    padding: 60px 20px;
+    text-align: center;
 }
 
-.contact-list li {
-    margin: 10px 0;
+#contact h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #f1f1f1;
 }
+
+.contact-intro {
+    margin-bottom: 30px;
+    font-size: 1.1rem;
+    color: #c1c7d0;
+}
+
+.contact-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.contact-card {
+    background: #3a539b;
+    border-radius: 8px;
+    width: 180px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.contact-card:hover {
+    transform: translateY(-10px);
+    background: #415b9a;
+}
+
+.contact-card i {
+    font-size: 2.5rem;
+    color: #f1f1f1;
+    margin-bottom: 15px;
+}
+
+.contact-card h3 {
+    font-size: 1.2rem;
+    color: #e2e6ea;
+    margin-bottom: 10px;
+}
+
+.contact-button {
+    display: inline-block;
+    padding: 8px 16px;
+    color: #fff;
+    background-color: #4a90e2;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+.contact-button:hover {
+    background-color: #3b79c0;
+}
+
 
 footer {
     text-align: center;
